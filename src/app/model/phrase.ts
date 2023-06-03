@@ -1,4 +1,10 @@
+export interface PhraseDTO {
+    id: number,
+    phrase: string,
+}
+
 export interface Phrase {
     id: number,
-    phrase: string
+    phrase: string,
+    checked: boolean
 }
