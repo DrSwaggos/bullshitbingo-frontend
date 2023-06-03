@@ -1,7 +1,7 @@
+<div class="bingoWon" *ngIf="bingo">BINGO</div>
 <div class="field-container">
-    <div class="grid-container" [ngStyle]="{'grid-template-columns': giveSpecialStringOdaSo()}">
-
-    <app-phrase *ngFor="let phrase of phrases" [phrase]=phrase class="grid-item"></app-phrase>
- </div>
- </div>
+    <div class="grid-container" [ngStyle]="styles">
+        <app-phrase *ngFor="let phrase of phrases" [phrase]=phrase class="grid-item"></app-phrase>
+    </div>
+</div>
 <router-outlet></router-outlet>
